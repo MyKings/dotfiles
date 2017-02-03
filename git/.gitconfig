@@ -1,20 +1,30 @@
 [user]
-	name = Han Chen
-	email = chen1324+git@gmail.com
+	name = MyKings
+	email = xsseroot@gmail.com
 [push]
 	default = simple
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	editor = vim
+	quotepath = false
 [alias]
-#	ci = commit
 	st = status
 	co = checkout
+	ct = commit
+	df = diff
 	br = branch
-	lg = log -p
-#	stage = add
-#	unstage = reset HEAD
-	plog = log --pretty=tformat:'%h %Cblue%cr%Creset %cn %Cgreen%s%Creset'
-	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
-#	timmeh = commit -am'TIMMEH\\!'
-#	subs = submodule foreach git pull origin master¬
-	local = log --numstat --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate  --first-parent --no-merges
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cn)%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	ss = log
 	ll = log --numstat --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	local = log --numstat --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate  --first-parent --no-merges
+[gui]
+	encoding = utf-8
+[i18n]
+	commitencoding = utf-8
+[push]
+	defualt = origin
